@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap">
+    <title>Loading</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #fullscreen-gif {
+            height:300px;
+            margin-bottom: 0;
+        }
+
+        h1 {
+            margin: 30px;
+            padding: 0;
+            color: black;
+            width:100%;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function removeGif() {
+            var gif = document.getElementById('fullscreen-gif');
+            gif.parentNode.removeChild(gif);
+            document.querySelector('h1').style.display = 'block';
+        }
+    </script>
+</head>
+
+<body>
+    <img id="fullscreen-gif" src="image/checkout.gif" alt="Loading">
+    <h1>Checkout complete!</h1>
+</body>
+
+</html>
