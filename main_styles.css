@@ -1,0 +1,118 @@
+ body {
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-image: url('image/main.png');
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     height: 100vh;
+     width: 100vw;
+     font-family: 'Montserrat', sans-serif;
+ 
+ }
+ h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 80px;
+    line-height: 1.1;
+    padding-right: 50px;
+    margin-bottom: 0;
+  }
+  p{
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+ .container {
+    padding: 10%;;
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     justify-content: center;
+ }
+ .heading{
+    margin-left: 120px;
+    align-self: center;
+    border:10px;
+ }
+ .checkout-btn {
+    width:80%;
+    background: linear-gradient(45deg, #FF8C00, #FF4500);
+    box-shadow: 0 0 50px rgba(228, 20, 20, 0.3);
+    border-radius: 35px;
+    padding: 20px 40px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .checkout-btn a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .checkout-btn:hover {
+    transform: scale(1.05);
+    background: white;
+    color: black;
+    box-shadow: 0 0 60px rgba(192, 12, 12, 0.3);
+  }
+
+  
+
+ .carousel {
+    width: 800px;
+    overflow: hidden;
+ }
+
+ .carousel-images {
+     display: flex;
+     animation: slide-carousel 10s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+   
+ }
+
+ .carousel-images img {
+    width: 70%;
+    height: auto;
+    padding-left:20%;
+    padding-right:20%;
+  }
+  
+  @keyframes slide-carousel {
+    0% {
+      transform: translateX(0);
+    }
+    14.28% {
+      transform: translateX(0);
+    }
+    28.57% {
+      transform: translateX(-110%);
+    }
+    42.85% {
+      transform: translateX(-220%);
+    }
+    57.14% {
+      transform: translateX(-330%);
+    }
+    71.42% {
+      transform: translateX(-440%);
+    }
+    85.71% {
+      transform: translateX(-550%);
+    }
+    100% {
+      transform: translateX(-660%);
+    }
+  }

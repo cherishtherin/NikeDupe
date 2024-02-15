@@ -1,0 +1,218 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+  }
+  
+  .header {
+    background-color: #BFC9D3;
+    height:100px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative; /* Add position relative to the header */
+  }
+  
+  .logo img {
+    width: 20em; 
+    margin-right: 10px; 
+  }
+  .cart-button { /* Fixed position for cart button */
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+  }
+ 
+  .cart-popup h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /* Styling for individual product items */
+  #cartItemsList li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+ }
+  #cartItemsList h4 {
+    flex-grow: 1;
+  }
+  .cart-items p {
+    margin-bottom: 5px;
+    color: #284B63;
+  }
+  .cart-items img {
+    width: 120px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 25px;
+    margin-right: 20px;
+    object-fit: cover;
+  }
+
+  .cart-button img {
+    cursor: pointer;
+    width:40px;
+  }
+  
+  /* Styling for the pop-up box */
+  .cart-popup {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    top: calc(100% + 10px); 
+    right: 0;
+    background: #fff;
+    width:500px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 999; 
+  }
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.close-button img {
+  width: 20px; /* Adjust the width and height according to your image size */
+  height: 20px;
+}
+.card-total {
+  margin-top: 50px;
+}
+
+.checkout-button {
+  background-color: #284B63;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 40px;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.3s;
+  height: 45px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.checkout-button:hover {
+  background-color: white;
+  color:#284B63;
+  transform: scale(1.1);
+}
+
+
+
+  .cart-icon img:hover {
+    transform: scale(1.1); /* Optional: Add a hover effect */
+  }
+  main {
+    justify-content: center;
+    padding-top: 100px; /* Padding between header and product list */
+  }
+  
+
+
+
+/* CSS styles for the product list */
+#product-list {
+  max-width: 1200px; /* Maximum width for the product list */
+  width: 90%; /* Ensure it takes full width */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid with minimum 250px and flexible width */
+  grid-gap: 30px; /* Gap between products */
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  justify-content: center; /* Align products in the center */
+}
+
+/* Styling for individual product items */
+#product-list li {
+  border-radius: 35px; 
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  width: 100%; /* Make each product take full width of its container */
+  height: 400px; /* Increase height of each product box */
+  margin-bottom: 25px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.11); /* Blur shadow effect */
+  transition: transform 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
+}
+#product-list li:hover {
+  transform: scale(1.05); /* Enlarge the card on hover */
+}
+
+#product-list button {
+  background-color: #284B63;
+  width:80%;
+  color: white; 
+  border: 2px solid #284B63;
+  border-radius: 35px;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing:1.5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+/* Hover effect for the "Add to Cart" button */
+#product-list button:hover {
+  background-color: white;
+  color: #284B63;
+  border-color: #284B63;
+  transform: translateX(-50%) scale(1.1); /* Grow effect */
+}
+
+
+/* Styling for product images */
+#product-list img {
+  width: 100%; /* Image width to fit the container */
+  max-height: 170px; /* Maximum image height */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Spacing below the image */
+  border-radius:35px;
+}
+
+/* Styling for product name */
+#product-list h3 {
+  margin-bottom: 5px;
+}
+
+/* Styling for product price */
+#product-list p {
+  margin-bottom: 15px;
+}
+
+
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #BFC9D3;
+    color: white;
+  }
+  
